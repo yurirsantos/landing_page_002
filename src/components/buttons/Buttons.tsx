@@ -38,3 +38,19 @@ export function ButtonTransparent(props: typesButtonAll) {
     </a>
   )
 }
+
+export function ButtonBorder(props: typesButtonAll) {
+  const styleButtonTransparent =
+    'bg-transparent border border-[#CB10A6] p-2 rounded-full lg:h-14 lg:w-36 text-[#CB10A6] text-sm m-2 hover:scale-110 duration-200 '
+
+  return (
+    <a href={props.link}>
+      <button
+        onClick={props.onClick}
+        className={styleButtonTransparent + props.plusStyleButton}
+      >
+        {props.title}
+      </button>
+    </a>
+  )
+}
