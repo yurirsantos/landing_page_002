@@ -111,14 +111,16 @@ export function Footer() {
     <footer className="bg-gradient-to-tr to-[#9A54EA] from-[#1A104E] p-16">
       <div className="lg:flex lg:justify-between lg:items-center">
         <div>
-          <h1 className="text-4xl text-white font-bold w-[500px] mb-5">
+          <h1 className="lg:text-4xl text-2xl text-white font-bold lg:w-[500px] mb-5">
             Control all your advertising from just one platform!
           </h1>
           <ButtonWithBackground title="GET STARTED" link="/" />
         </div>
 
         <div>
-          <p className="text-base text-white font-thin mb-4">TRACK ON THE GO</p>
+          <p className="text-base text-white font-thin lg:mb-4 lg:mt-0 mb-5 mt-5">
+            TRACK ON THE GO
+          </p>
           <div className="flex justify-center items-center gap-5">
             <img
               src={googlePlay}
@@ -132,19 +134,21 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="w-full h-[1px] bg-[#6B6B6B] mt-16 mb-5" />
+      <div className="w-full h-[1px] bg-[#6B6B6B] lg:mt-16 lg:mb-5 mt-12 mb-12" />
 
-      <div className="lg:flex lg:justify-between lg:items-start lg:gap-96 mt-16">
+      <div className="lg:flex lg:justify-between lg:items-start lg:gap-96 lg:mt-16">
         <div>
           <p className="text-[#a9a8a8] text-base">BUY NATIVE TRAFFIC</p>
           <img
             src={voluumDsp}
             className="mt-5 mb-5 hover:scale-110 duration-200"
           />
+
           <p className="text-[#a9a8a8] text-base">
             JOIN OUR COMMUNITIES OF AFFILIATES ON
           </p>
-          <div className="flex justify-start items-center gap-5 mt-5">
+
+          <div className="flex justify-start items-center gap-5 mt-5 lg:mb-0 mb-12">
             <img
               src={facebookIconName}
               className="hover:scale-110 duration-200"
@@ -156,8 +160,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="text-white lg:flex lg:justify-end lg:items-start lg:gap-16">
-          <div>
+        <div className="text-white lg:flex lg:justify-end lg:items-start lg:gap-16 w-max m-auto">
+          <div className="lg:mb-0 mb-12">
             <h1 className="font-bold">COMPANY</h1>
 
             {companyItems.map(companyItem => {
@@ -169,7 +173,7 @@ export function Footer() {
             })}
           </div>
 
-          <div>
+          <div className="lg:mb-0 mb-12">
             <h1 className="font-bold">FEATURES</h1>
 
             {featuresItems.map(featureItem => {
@@ -181,7 +185,7 @@ export function Footer() {
             })}
           </div>
 
-          <div>
+          <div className="lg:mb-0 mb-12">
             <h1 className="font-bold">INTEGRATIONS</h1>
 
             {integrationsItems.map(integrationItem => {
@@ -193,7 +197,7 @@ export function Footer() {
             })}
           </div>
 
-          <div>
+          <div className="lg:mb-0 mb-12">
             <h1 className="font-bold">RESOURCES</h1>
 
             {resourcesItems.map(resourceItem => {
@@ -212,30 +216,44 @@ export function Footer() {
       <div className="w-full h-[1px] bg-[#6B6B6B] mt-16 mb-5" />
 
       <div className="lg:flex lg:justify-between lg:items-center mt-10">
-        <h1 className="text-base text-[#a9a8a8]">
+        <h1 className="text-base text-[#a9a8a8] w-max lg:m-0 m-auto">
           © Voluum by CentralNic 2015-2021
         </h1>
 
-        <div className="lg:flex lg:justify-end lg:items-center lg:gap-6 text-[#a9a8a8] text-base">
-          <h3 className="hover:text-white">End User Privacy Policy</h3>
-          <h3 className="hover:text-white">Privacy Policy</h3>
-          <h3 className="hover:text-white">Cookies policy</h3>
-          <h3 className="hover:text-white">Terms & Conditions</h3>
-          <h3 className="hover:text-white">DPA</h3>
-          <h3 className="hover:text-white">Security</h3>
+        <div className="lg:flex lg:justify-end lg:items-center lg:gap-6 text-[#a9a8a8] text-base lg:mt-0 mt-12">
+          <h3 className="hover:text-white lg:mb-0 mb-7 lg:text-start text-center">
+            End User Privacy Policy
+          </h3>
+          <h3 className="hover:text-white lg:mb-0 mb-7 lg:text-start text-center">
+            Privacy Policy
+          </h3>
+          <h3 className="hover:text-white lg:mb-0 mb-7 lg:text-start text-center">
+            Cookies policy
+          </h3>
+          <h3 className="hover:text-white lg:mb-0 mb-7 lg:text-start text-center">
+            Terms & Conditions
+          </h3>
+          <h3 className="hover:text-white lg:mb-0 mb-7 lg:text-start text-center">
+            DPA
+          </h3>
+          <h3 className="hover:text-white lg:mb-0 mb-7 lg:text-start text-center">
+            Security
+          </h3>
 
-          <img
-            src={facebookIcon}
-            className="w-8 h-8 hover:scale-125 duration-200"
-          />
-          <img
-            src={linkedinIcon}
-            className="w-8 h-8 hover:scale-125 duration-200"
-          />
-          <img
-            src={youTubeIcon}
-            className="w-8 h-8 hover:scale-125 duration-200"
-          />
+          <div className="flex justify-center items-center lg:gap-12 gap-16">
+            <img
+              src={facebookIcon}
+              className="lg:w-8 lg:h-8 w-12 h-12 hover:scale-125 duration-200"
+            />
+            <img
+              src={linkedinIcon}
+              className="lg:w-8 lg:h-8 w-12 h-12 hover:scale-125 duration-200"
+            />
+            <img
+              src={youTubeIcon}
+              className="lg:w-8 lg:h-8 w-12 h-12 hover:scale-125 duration-200"
+            />
+          </div>
         </div>
       </div>
     </footer>

@@ -128,8 +128,8 @@ export function Home() {
     <>
       <Navbar />
 
-      <div className="bg-[#E5E5E5]">
-        <div className="bg-gradient-to-br from-[#CB10A6] to-[#1A104E] lg:h-[880px] z-0 text-center text-white pt-10">
+      <div className="bg-[#E5E5E5] lg:pt-16 pt-10">
+        <div className="bg-gradient-to-br from-[#CB10A6] to-[#1A104E] lg:h-[880px] h-[950px] z-0 text-center text-white pt-10">
           <div className="flex justify-center items-center">
             <div>
               <h1 className="mt-5 mb-5">The all-in-one affiliate software</h1>
@@ -162,12 +162,12 @@ export function Home() {
               Integrated with 40+ Traffic sources
             </h1>
 
-            <div className="lg:flex lg:justify-center lg:items-center lg:gap-20 lg:mt-5">
+            <div className="lg:flex lg:justify-center lg:items-center lg:gap-20 lg:mt-5 w-max m-auto mt-10">
               {imagesClients.map(imageClient => {
                 return (
                   <img
                     src={imageClient.src}
-                    className="hover:scale-125 duration-200"
+                    className="hover:scale-125 duration-200 lg:mt-0 lg:mb-0 mt-5 mb-5 w-max m-auto"
                   />
                 )
               })}
@@ -175,7 +175,7 @@ export function Home() {
           </div>
         </div>
 
-        <div className="lg:flex lg:justify-center lg:items-center pb-14">
+        <div className="lg:flex lg:justify-center lg:items-center lg:p-0 p-8 pb-14">
           <div className="lg:w-[30%] pl-14 lg:mr-14">
             <h1 className="text-[#CB10A6] mt-5 mb-5 text-lg">
               Campaign Optimisation
@@ -193,23 +193,23 @@ export function Home() {
               conversions and effortlessly optimize your campaign flows for even
               more.
             </p>
-            <div className="lg:flex lg:justify-start lg:items-center lg:gap-5">
+            <div className="flex justify-start items-center gap-5 lg:mt-0 lg:mb-0 mt-8 mb-14">
               <img src={appleStore} className="hover:scale-125 duration-200" />
               <img src={googlePlay} className="hover:scale-125 duration-200" />
             </div>
           </div>
           <img
             src={image1}
-            className="bg-[#9A54EA] p-32 rounded-md hover:scale-105 duration-200"
+            className="bg-[#9A54EA] lg:p-32 p-14 rounded-md hover:scale-105 duration-200"
           />
         </div>
 
-        <div className="bg-white p-28 mt-10">
-          <h1 className="font-bold text-4xl text-center">
+        <div className="bg-white lg:p-28 p-16 mt-10">
+          <h1 className="font-bold lg:text-4xl text-2xl text-center">
             Improve your ad performance with our affiliate marketing software
           </h1>
 
-          <div className="lg:flex lg:justify-center lg:items-center mt-10">
+          <div className="flex justify-center items-center mt-10">
             <div className="bg-[#9A54EA] text-white p-5 w-56 text-center text-lg mr-[2px] rounded-tl-lg">
               <h1>Track</h1>
             </div>
@@ -221,21 +221,21 @@ export function Home() {
             </div>
           </div>
 
-          <div className="bg-[#F9F5FF] w-10/12 m-auto rounded-2xl">
+          <div className="bg-[#F9F5FF] lg:w-10/12 m-auto rounded-2xl">
             <div className="lg:flex lg:justify-center lg:items-center pb-14">
-              <div className="lg:w-[30%] pl-14 lg:mr-14">
-                <h1 className="text-[#CB10A6] mt-5 mb-5 text-lg">
+              <div className="lg:w-[30%] lg:pl-14 pl-3 lg:mr-14">
+                <h1 className="text-[#CB10A6] mt-5 mb-5 lg:text-lg text-base lg:pt-0 pt-7 text-justify">
                   AFFILIATE MARKETING TRACKING
                 </h1>
-                <h1 className="font-bold text-2xl mt-5 mb-5">
+                <h1 className="font-bold lg:text-2xl text-xl mt-5 mb-5 text-justify">
                   Track everything in one place
                 </h1>
-                <p className="text-[#6B6B6B] mt-5 w-[80%] text-xl">
+                <p className="text-[#6B6B6B] mt-5 w-[80%] lg:text-xl text-lg text-justify">
                   What kind of ads do you run? Native, display, pop, email,
                   search, push, social, video? Paid or organic? Voluum affiliate
                   tracker lets you track it all! With or without redirects.
                 </p>
-                <p className="text-[#6B6B6B] mt-2 mb-5 w-[80%] text-xl">
+                <p className="text-[#6B6B6B] mt-2 mb-5 w-[80%] lg:text-xl text-lg text-justify">
                   Thanks to our superfast reporting you can easily monitor over
                   30 metrics about each visit, click, and conversion coming from
                   all of your traffic sources – with one tool and in real time!
@@ -259,7 +259,7 @@ export function Home() {
           <div className="lg:flex lg:justify-center lg:items-center lg:gap-12 mt-16">
             {cardsFeatures.map(cardFeature => {
               return (
-                <div className="bg-white rounded-md shadow-2xl p-5 w-max m-auto hover:scale-105 duration-200">
+                <div className="bg-white rounded-md shadow-2xl p-5 w-max m-auto lg:mb-0 mb-8 hover:scale-105 duration-200">
                   <img
                     src={cardFeature.icon}
                     className="h-20 w-20 bg-[#F9F5FF] p-2 rounded-full mt-5 mb-5"
@@ -287,8 +287,8 @@ export function Home() {
         </div>
 
         <div className="lg:flex lg:justify-center lg:items-center">
-          <img src={people1} className="h-[800px]" />
-          <div className="text-white bg-[#2ACDED] h-[800px] p-16">
+          <img src={people1} className="lg:h-[800px] h-[470px]" />
+          <div className="text-white bg-[#2ACDED] lg:h-[800px] h-[470px] p-16">
             <p className="font-bold mt-16 text-base">
               I used nearly every tracking tool on the market and I always come
               back to Voluum. It provides the most user-friendly interface and
@@ -298,24 +298,24 @@ export function Home() {
             <p className="text-base">Affiliate Community Leader</p>
             <img src={logoAffLift} />
           </div>
-          <img src={people2} className="h-[800px]" />
+          <img src={people2} className="lg:h-[800px] lg:block hidden" />
         </div>
 
-        <div className="bg-hero  w-[1088px] h-[552px] m-auto mt-16 pt-20 pl-16 pr-16 pb-16 rounded-md shadow-2xl">
+        <div className="bg-hero lg:w-[1088px] lg:h-[552px] w-[420px] h-max m-auto mt-16 pt-20 lg:pl-16 lg:pr-16 pb-16 pl-7 pr-7 rounded-md shadow-2xl">
           <div className="lg:flex lg:justify-center lg:items-center lg:gap-10">
             <img
               src={video1}
               className="rounded-md hover:scale-105 duration-200"
             />
             <div>
-              <h1 className="text-[#CB10A6] mt-5 mb-5 text-lg">
+              <h1 className="text-[#CB10A6] mt-5 mb-5 text-lg lg:text-start text-center">
                 AFFILIATE MARKETING TRACKING
               </h1>
-              <h1 className="font-bold text-2xl mt-5 mb-5 lg:w-80 text-white">
+              <h1 className="font-bold text-2xl mt-5 mb-5 lg:w-80 text-white lg:text-start text-center">
                 An affiliate tracking platform made for affiliates, by
                 affiliates
               </h1>
-              <p className="text-[#6B6B6B] mt-5 w-[80%] text-xl mb-5">
+              <p className="text-[#6B6B6B] mt-5 text-xl mb-5 lg:text-start text-center">
                 Watch a short video about an affiliate marketer who has inspired
                 a team of 100+ creative minds to develop a truly game-changing
                 ad tracking software.
@@ -325,8 +325,8 @@ export function Home() {
           </div>
         </div>
 
-        <div className="lg:flex lg:justify-center lg:items-center mt-32 w-[7px] m-auto">
-          <div className="p-16 mr-36">
+        <div className="lg:flex lg:justify-center lg:items-center lg:mt-32 mt-6 m-auto">
+          <div className="lg:p-0 p-16 lg:mr-0 mr-16">
             <h1 className="text-[#CB10A6] mt-5 mb-5 text-lg">
               AFFILIATE MARKETING TRACKING
             </h1>
@@ -349,13 +349,13 @@ export function Home() {
           <div>
             <img
               src={image3}
-              className="z-40 absolute hover:scale-110 duration-200 rounded-lg"
+              className="z-40 lg:absolute lg:w-[623px] lg:h-[592px] w-[352px] h-[296px] m-auto hover:scale-110 duration-200 rounded-lg"
             />
-            <div className="w-[623px] h-[592px] bg-[#9A54EA] relative mt-16 ml-16 rounded-lg" />
+            <div className="lg:w-[623px] lg:h-[592px] ml-16 w-[312px] h-[296px] bg-[#9A54EA] lg:relative lg:mt-16 rounded-lg lg:block hidden" />
           </div>
         </div>
 
-        <div className="bg-white p-28 mt-10 text-center">
+        <div className="bg-white lg:p-28 p-16 mt-10 text-center">
           <h1 className="text-4xl">
             We're a part of the affiliate community since 2015!
           </h1>
@@ -364,12 +364,12 @@ export function Home() {
             Official tracking partner of
           </p>
 
-          <div className="lg:flex lg:justify-center lg:items-center lg:gap-16 mb-16 mt-5">
+          <div className="lg:flex lg:justify-center lg:items-center lg:gap-16 w-max m-auto mb-16 mt-5">
             {clientsImage.map(clientImage => {
               return (
                 <img
                   src={clientImage.src}
-                  className="hover:scale-110 duration-200"
+                  className="lg:mb-0 mb-7 hover:scale-110 duration-200"
                 />
               )
             })}
@@ -377,12 +377,12 @@ export function Home() {
 
           <p className="text-[#6B6B6B] mt-5 text-xl mb-5">Find us on</p>
 
-          <div className="lg:flex lg:justify-center lg:items-center lg:gap-16">
+          <div className="lg:flex lg:justify-center lg:items-center lg:gap-16 w-max m-auto">
             {clientsImageTwo.map(clientImage => {
               return (
                 <img
                   src={clientImage.src}
-                  className="hover:scale-110 duration-200"
+                  className="lg:mb-0 mb-7 hover:scale-110 duration-200"
                 />
               )
             })}
